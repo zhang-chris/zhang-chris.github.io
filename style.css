@@ -1,0 +1,313 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}	
+
+.container{
+	width: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	height: 100px;
+	padding: 25px;
+	font-size: 20px;
+	border: 0;
+	background: transparent;
+	transition: all 0.4s ease;
+}
+
+.navbar.transition {
+	height: 50px;
+	padding: 0px;
+	font-size: 15px;
+	background: white;
+	color: #ebebeb;
+	transition: all 0.4s ease;
+}
+
+.intro{
+	min-height: 100%;
+	position: relative;
+    width: 100%;
+    height: auto;
+    background: url(images/sample.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.intro-title-text-container {
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	right: 0%;
+}
+
+#intro-title{
+	font-family: "Lato";
+	font-size: 65px;
+}
+
+#intro-text{
+	font-family: "Lato";
+	font-size: 22px;
+}
+
+.info-content{
+	background-color: white;
+	position: relative;
+}
+
+.info2-content{
+	background-color: #F04B5A;
+}
+
+.p-text {
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 22px;
+
+}
+
+#about{
+
+}
+
+.logo {
+	width: 13%;
+	height: auto;
+	transition: all 0.4s ease;
+}
+
+.logo.transition1{
+	padding: 8px 8px 25px 5px;
+	width: 10%;
+	height: auto;
+	transition: all 0.4s ease;
+}
+
+#cal-logo {
+	margin: auto;
+	width: 10%;
+	height: auto;
+}
+
+#resume-button {
+	/* Center and make better fonts/design */
+}
+
+.title{
+	text-align: center;
+	font-family: "Open Sans";
+	font-style: normal;
+
+	/* Font-family, bold*/
+}
+
+#experience{
+	/* Separate into columns for experience */
+}
+
+#projects{
+	/* Separate into columns for projects */
+}
+
+.project-title {
+	text-align: center;
+	font-family: "Open Sans";
+	color: black;
+	font-size: 30px;
+}
+
+.project-text{
+	font-family: "Open Sans";
+	font-size: 22px;
+
+}
+
+#contact{
+
+}
+
+.colored {
+	color: white;
+	/* Font-family, font-size */
+}
+
+.contact-icons {
+	/*Center and space out icons; add linked */
+	text-align: center;
+}
+
+.fa {
+	padding: 20px;
+}
+
+.icons:link {
+	color: white;
+	-o-transition:.25s;
+ 	-ms-transition:.25s;
+ 	-moz-transition:.25s;
+  	-webkit-transition:.25s;
+  	transition:.25s;
+}
+
+.icons:visited {
+	color: white;
+}
+
+.icons:hover {
+	color: black;
+	-o-transition:.5s;
+ 	-ms-transition:.5s;
+ 	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition:.5s;
+}
+
+.icons:active {
+	color: white;
+}	
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.4); 
+}	
+
+.btn {
+	position: relative;
+	color: white;
+	background-color: #F04B5A;
+	border-width: 4px;
+	border-color: white;
+	display: block;
+	margin: auto;
+	width: 13%;
+	font-family: "Open Sans";
+	font-size: 24px;
+	padding: 3px;
+	border-radius: 10px;
+	outline: none;
+	-o-transition:..25s;
+ 	-ms-transition:.25s;
+ 	-moz-transition:.25s;
+  	-webkit-transition:.25s;
+  	transition:.25s;
+}
+
+.btn:hover {
+	border-color: black;
+	color: black;
+	background-color: #F04B5A;
+	outline: none;
+	-o-transition:.5s;
+ 	-ms-transition:.5s;
+ 	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition:.5s;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	border-color: black;
+	color: black;
+	background-color: #F04B5A;
+    outline: 0 none;
+}
+
+.btn:active:focus, .btn.active:focus {
+	color: white;
+	background-color: #F04B5A;
+	border-color: white;
+	outline: none;
+	-o-transition:..25s;
+ 	-ms-transition:.25s;
+ 	-moz-transition:.25s;
+  	-webkit-transition:.25s;
+  	transition:.25s;
+
+}
+
+tr {
+	background-color: #F04B5A;
+	font-family: "Open Sans";
+	color: white;
+	border: white;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+td {
+	color: white;
+}
+	
+tr:hover {
+	color: black;
+	background-color: #f7a5ac;
+}
+
+td a {
+	color: white;
+}
+
+td a:focus{
+	color: white;
+	text-decoration: none;
+}
+
+td a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.proj-link {
+	text-decoration: none;
+	color: #535f6b;
+}
+
+.proj-link:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.proj-link:focus {
+	color: #535f6b;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+
+#gitlet {
+	width: 55%;
+	height: auto;
+	display: block;
+	margin: auto;
+	padding: 2px;
+}
+
+#puzzle {
+	width: 30%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
