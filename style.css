@@ -19,6 +19,8 @@ html, body {
 	height: 100px;
 	padding: 25px;
 	font-size: 20px;
+	font-family: "Lato";
+	font-style: bold;
 	border: 0;
 	background: transparent;
 	transition: all 0.65s ease;
@@ -33,12 +35,37 @@ html, body {
 	transition: all 0.65s ease;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar.transition .navbar-nav > li > a {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #F04B5A;  /*Sets the text hover color on navbar*/
+}
+
+.navbar.transition .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #F04B5A;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+
+.navbar.transition .navbar-nav > li > a:focus {
+    color: #F04B5A;
+}
+
+
 .intro{
 	min-height: 100%;
 	position: relative;
     width: 100%;
     height: auto;
-    background: url(images/sample.jpg) no-repeat center center;
+    background: url(images/bridge-edit.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,13 +75,20 @@ html, body {
 .intro-title-text-container {
 	position: absolute;
 	text-align: center;
-	top: 35%;
+	top: 18%;
 	right: 0%;
 }
 
 #intro-title{
 	font-family: "Lato";
 	font-size: 65px;
+	color: #F04B5A;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; 
+    -webkit-font-smoothing: antialiased
 }
 
 #intro-text{
@@ -293,12 +327,8 @@ td a:hover{
 	text-decoration: none;
 }
 
-.navbar-default .navbar-nav > li > a:focus {
-    color: #777;
-}
-
 #gitlet {
-	width: 55%;
+	width: 61%;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -306,8 +336,16 @@ td a:hover{
 }
 
 #puzzle {
-	width: 30%;
+	width: 40%;
 	height: auto;
 	display: block;
 	margin: auto;
+}
+
+#word-clock {
+	width: 50%;
+	height: auto;
+	display: block;
+	margin: auto;
+
 }
