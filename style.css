@@ -52,13 +52,16 @@ html, body {
 }
 
 .navbar-default .navbar-nav > li > a:focus {
-    color: #F04B5A;
+    color: black;
 }
 
 .navbar.transition .navbar-nav > li > a:focus {
-    color: #F04B5A;
+    color: black;
 }
 
+.navbar.transition .nav li.active a{
+    color: #F04B5A;
+}
 
 .intro{
 	min-height: 100%;
