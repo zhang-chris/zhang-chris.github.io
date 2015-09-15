@@ -55,6 +55,10 @@ html, body {
     color: black;
 }
 
+.navbar .navbar-nav > li > a:focus {
+    color: white;
+}
+
 .navbar.transition .navbar-nav > li > a:focus {
     color: black;
 }
