@@ -23,7 +23,12 @@ html, body {
 	font-style: bold;
 	border: 0;
 	background: transparent;
-	transition: all 0.65s ease;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	transition-timing-function: ease;
+	transition: height .65s, padding .65s, font-size .65s, 
+		font-family .65s, font-style .65s, border .65s, background .65s,
+		text-shadow 0s;
+
 }
 
 .navbar.transition {
@@ -32,7 +37,12 @@ html, body {
 	font-size: 15px;
 	background: white;
 	color: #ebebeb;
-	transition: all 0.65s ease;
+	text-shadow: none;
+}
+
+.navbar-left {
+	position: fixed;
+	float: left;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -119,18 +129,16 @@ html, body {
 
 }
 
-#about{
-
-}
-
-.logo {
+#logo {
 	width: 13%;
 	height: auto;
+	display: inline-block;
 	transition: all 0.65s ease;
 }
 
-.logo.transition1{
+#logo.transition1{
 	padding: 8px 8px 25px 5px;
+	margin: auto;
 	width: 10%;
 	height: auto;
 	transition: all 0.65s ease;
@@ -138,12 +146,8 @@ html, body {
 
 #cal-logo {
 	margin: auto;
-	width: 10%;
+	max-width: 10%;
 	height: auto;
-}
-
-#resume-button {
-	/* Center and make better fonts/design */
 }
 
 .title{
@@ -172,10 +176,6 @@ html, body {
 .project-text{
 	font-family: "Open Sans";
 	font-size: 22px;
-
-}
-
-#contact{
 
 }
 
@@ -324,22 +324,36 @@ td a:hover{
 	color: #535f6b;
 }
 
+.proj-link:focus {
+	color: #535f6b;
+	text-decoration: none;
+}
+
 .proj-link:hover {
 	color: black;
 	text-decoration: none;
 }
 
-.proj-link:focus {
-	color: #535f6b;
-	text-decoration: none;
+#music-classifier {
+	width: 28%;
+	height: auto;
+	display: block;
+	margin-left: 30%;
+}
+
+#bnai-emunah{
+	width: 80%;
+	height: auto;
+	display: block;
+	margin-left: 17%;
 }
 
 #gitlet {
 	width: 61%;
 	height: auto;
 	display: block;
-	margin: auto;
-	padding: 2px;
+	margin-left: 15%;
+	margin-top: 15%;
 }
 
 #puzzle {
@@ -350,9 +364,45 @@ td a:hover{
 }
 
 #word-clock {
+	margin-left: 28%;
 	width: 50%;
 	height: auto;
 	display: block;
-	margin: auto;
 
+}
+
+.project-image {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	margin: auto;
+	background: blue;
+}
+	
+#blizzard-logo {
+	display: block;
+	max-width: 80%;
+	height: auto;
+    margin: auto;
+}
+
+#spring-logo {
+	display: block;
+	max-width: 75%;
+	height: auto;
+    margin: auto;
+}
+
+.experience-date {
+	text-align: center;
+	font-family: "Open Sans";
+	color: black;
+	font-size: 25px;
+}
+
+.experience-text {
+	color: #F04B5A;
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 22px;
 }
