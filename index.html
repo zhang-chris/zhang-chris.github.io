@@ -21,7 +21,7 @@
 			<!---Navbar-->
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
-					<div class="navbar-left navbar-left-addon">
+					<div class="navbar-left">
 						<a class="page-scroll" href="#top-page">
 							<img id="logo" src="images/cyzlong.png">	
 						</a>
@@ -60,7 +60,6 @@
 				<div class="intro-content">
 					<div class="container intro-title-text-container">
 						<h1 id="intro-title">Chris Zhang</h1>
-						<br><br><br><br><br><br><br><br><br><br><br>
 		            </div>
 		        </div>
 		    </div>
@@ -71,7 +70,7 @@
 		  				<br><br><br>
 						<h1 class="title"><b>About</b></h1>
 						<br><br>
-						<p class="p-text"> I am currently a junior majoring in Electrical Engineering & Computer Science at University of California, Berkeley.<br><br>
+						<p class="p-text"> I am currently a junior majoring in Electrical Engineering & Computer Sciences at University of California, Berkeley.<br><br>
 						<img src="images/cal-logo.png" id="cal-logo"> <br><br>
 						I grew up in Fremont, California and attended Mission San Jose High School. 
 						In my spare time I enjoy weightlifting, playing badminton for the Cal Badminton club, and reading fiction novels.
@@ -94,11 +93,13 @@
 								<br>
 								<p class="experience-text">Full stack web development with an emphasis on backend, mainly working with Java and the Spring Framework. </p>
 							</div>
-							<div class="col-md-4 frame">
-								<a href="http://blizzard.com" target="_blank"><img id="blizzard-logo" src="images/blizzard2.png"></a>
+							<div class="col-md-4">
+								<a href="http://blizzard.com" target="_blank">
+									<br>
+									<img id="blizzard-logo" src="images/blizzard2.png">
+								</a>
+								<br>
 							</div>
-
-
 						</div>
 						<br><br><br><br>
 					</div>
@@ -106,52 +107,103 @@
 			</div>
 			<!--Projects-->
 			<div class="container info2-content" id="project">
+				<br><br>
+				<h1 class="title colored"><b>Projects</b></h1>
+				<br>
 				<div class="row">
-		  			<div class="col-xs-10 col-xs-offset-1 colored">
-		  				<br><br>
-						<h1 class="title"><b>Projects</b></h1>
+					<div class="col-xs-8 col-xs-offset-2 colored">
+						<div class="row project-title">
+							<div class="col-xs-6">
+								Music Classifier
+							</div>
+							<div class="col-xs-6">
+								Congregation B'nai Emunah
+							</div>
+						</div>
 						<br>
-						<div class="row">
-							<div class="col-md-4">
-								<h2 class="project-title">Gitlet</h2>
-								<br><br><br>
-								<img src="images/gitlet.png" id="gitlet">
-								<br><br><br>
-								<p class="project-text">Gitlet is a miniature model of the well-known version control system: <a href="https://git-scm.com/" target="_blank" class="proj-link">Git</a>. It has many of the commonly used local functionalities of Git such as commit, checkout, branch, merge, rebase, etc. This project was coded in Java and reinforces concepts of trees, file manipulation, and serialization.</p>
-							</div>
-  							<div class="col-md-4">
-  								<h2 class="project-title">Sliding Block Puzzle</h2>
-  								<br>
-  								<img src="images/puzzle1.png" id="puzzle">
-  								<br>
-  								<p class="project-text">Written in Java, this program solves <a href="https://en.wikipedia.org/wiki/Sliding_puzzle" target="_blank" class="proj-link">sliding block puzzles</a> and was built to maximize efficiency and speed. Given an initial file with the starting coordinates of all the blocks and a goal file with the ending, it utilizes the breadth first search algorithm along with the Manhattan heuristic to print out the set of corresponding moves that solve the puzzle.</p>
-  							</div>
-  							<div class="col-md-4">
-  								<h2 class="project-title">Word Clock</h2>
-  								<br>
-  								<img src="images/word-clock-cropped.jpg" id="word-clock">
-  								<br>
-  								<p class="project-text">Based off of scottbez1's Instructable titled "<a href="http://www.instructables.com/id/Sleek-word-clock/" target="_blank" class="proj-link">Sleek word clock</a>", this was my first ever project, introducing me to the Arduino, soldering, and prototyping/building circuits. The clock contains a barebones self-built "Arduino" board with an ATMega microcontroller, shift registers, and driver ICs to keep track of time and light up the correct LEDs.</p>
-  							</div>
-  							<br><br>
-  						</div>
-  						<div class="row">
-  							<div class="col-md-4">
-								<h2 class="project-title"></h2>
-								<p class="project-text"></p>
-							</div>
-  							<div class="col-md-4">
-  							</div>
-  							<div class="col-md-4">
-  								<h2 class="project-title"></h2>
-  								<p class="project-text"></p>
-  							</div>
-  							<br><br>
-  						</div>
-						<br><br>
-		  			</div>
+					</div>
 				</div>
-			</div>	
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 colored">
+						<div class="col-xs-6 image-container">
+							<img src="images/music-classifier.png" id="music-classifier">
+						</div>
+						<div class="col-xs-6 image-container">
+							<img src="images/bnai-emunah.png" id="bnai-emunah">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 colored">
+						<div class="row project-text">
+							<div class="col-xs-6">
+								Django web app that sorts existing Soundcloud and Spotify playlists by genre into new ones using neural networks.
+								<br>
+								Development is currently in progress among a team of three.
+								<br>
+								<a href="https://github.com/zhang-chris/soundcloud-classifier" target="_blank" class="proj-link">Github Repository</a>
+							</div>
+							<div class="col-xs-6">
+								Worked with five others to create a Ruby on Rails web app for <a href="http://bnaiemunahsf.org/" target="_blank" class="proj-link">Congregation B'nai Emunah</a>, a nonprofit Jewish synagogue located in San Francisco. It is an tool used by the synagogue's committee to facilitate internal communication and to store information about its members. 
+								<br>
+								<a href="https://github.com/TheXienator/Congregation-Bnai-Emunah" target="_blank" class="proj-link">Github Repository</a>
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="container info2-content" id="project">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 colored">
+						<div class="row project-title">
+							<div class="col-xs-4">
+								Gitlet
+							</div>
+							<div class="col-xs-4">
+								Sliding Block Puzzle
+							</div>
+							<div class="col-xs-4">
+								Word Clock
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 colored">
+						<div class="col-xs-4">
+							<img src="images/gitlet.png" id="gitlet">
+						</div>
+						<div class="col-xs-4">
+							<img src="images/puzzle1.png" id="puzzle">
+						</div>
+						<div class="col-xs-4">
+							<img src="images/word-clock-cropped.jpg" id="word-clock">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 colored">
+						<div class="row project-text">
+							<div class="col-xs-4">
+								Gitlet is a miniature Java program of the well-known version control system: Git. It has many of the commonly used local functionalities of Git such as commit, checkout, branch, merge, rebase, etc.
+							</div>
+							<div class="col-xs-4">
+								Written in Java, this program solves <a href="https://en.wikipedia.org/wiki/Sliding_puzzle" target="_blank" class="proj-link">sliding block puzzles</a> and was built to maximize efficiency and speed. Given an initial file with the starting coordinates of all the blocks and a goal file with the ending, it utilizes a search algorithm to find the set of corresponding moves that solve the puzzle.
+							</div>
+							<div class="col-xs-4">
+								Based off of scottbez1's Instructable, "<a href="http://www.instructables.com/id/Sleek-word-clock/" target="_blank" class="proj-link">Sleek word clock</a>", this was my first project, introducing me to the Arduino, soldering, and building circuits. It contains a circuit board with a microcontroller, shift registers, and driver ICs to keep track of time and light up the correct LEDs.
+							</div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<br><br><br><br>
+			</div>
 
 			<!--Coursework-->
 			<div class="container info-content" id="coursework">
@@ -164,39 +216,34 @@
 							<table class="table table-bordered">
 								<tbody>
 									<tr>
-										<td>CS61A</td>
-										<td><a href='http://inst.eecs.berkeley.edu/~cs61a/sp15/' target="_blank">Structure and Interpretation of Computer Programs</a></td>
-										<td>Spring 2015</td>
+										<td>CS 170</td>
+										<td><a href='http://www-inst.eecs.berkeley.edu/~cs170/sp16/' target="_blank">Efficient Algorithms and Intractable Problems</a></td>
+										<td>Spring 2016</td>
 									</tr>
 									<tr>
-									    <td>&nbsp;&nbsp;&nbsp;CS61BL&nbsp;&nbsp;&nbsp;</td>
-									    <td><a href='http://cs61bl.github.io/' target="_blank">Data Structures and Programming Methodology</a></td>
-									    <td>Summer 2015</td>
+										<td>CS 169</td>
+										<td><a href='http://www-inst.eecs.berkeley.edu/~cs169/sp16' target="_blank">Software Engineering</a></td>
+										<td>Spring 2016</td>
 									</tr>
 									<tr>
-									    <td>CS61C</td>
-									    <td><a href='http://www-inst.eecs.berkeley.edu/~cs61c/fa15/' target="_blank">Great Ideas in Computer Architecture</a></td>
-									    <td>Fall 2015</td>
-									</tr>
-									<tr>
-										<td>CS188</td>
+										<td>CS 188</td>
 										<td><a href='http://www-inst.eecs.berkeley.edu/~cs188/fa15' target="_blank">Introduction to Artificial Intelligence</a></td>
 										<td>Fall 2015</td>
 									</tr>
 									<tr>
-									    <td>CS70</td>
-									    <td><a href='https://inst.eecs.berkeley.edu/~cs70/su15/' target="_blank">Discrete Mathematics and Probability Theory</a></td>
+									    <td>CS 61C</td>
+									    <td><a href='http://www-inst.eecs.berkeley.edu/~cs61c/fa15/' target="_blank">Great Ideas in Computer Architecture</a></td>
+									    <td>Fall 2015</td>
+									</tr>
+									<tr>
+									    <td>&nbsp;&nbsp;CS 61BL&nbsp;&nbsp;</td>
+									    <td><a href='http://www-inst.eecs.berkeley.edu/~cs61bl/su15/' target="_blank">Data Structures and Programming Methodology</a></td>
 									    <td>Summer 2015</td>
 									</tr>
 									<tr>
-									    <td>EE20</td>
-									    <td><a href='http://www-inst.eecs.berkeley.edu/~ee20/archives.html' target="_blank">Structure and Interpretation of Systems and Signals</a></td>
-									    <td>Spring 2015</td>
-									</tr>
-									<tr>
-									    <td>EE40</td>
-									    <td><a href='https://inst.eecs.berkeley.edu/~ee40/archives.html' target="_blank">Introduction to Microelectronic Circuits</a></td>
-									    <td>Fall 2015</td>
+									    <td>CS 70</td>
+									    <td><a href='http://www-inst.eecs.berkeley.edu/~cs70/su15/' target="_blank">Discrete Mathematics and Probability Theory</a></td>
+									    <td>Summer 2015</td>
 									</tr>
 								</tbody>
 							</table>	
@@ -214,10 +261,10 @@
 						<h1 class="title"><b>Contact Me</b></h1>
 						<br>
 						<div class="contact-icons">
-							<a href="https://www.facebook.com/profile.php?id=100004417720982" class="icons" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
-							<a href="https://github.com/zhang-chris" class="icons" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+							<!-- <a href="https://www.facebook.com/profile.php?id=100004417720982" class="icons" target="_blank"><i class="fa fa-facebook fa-4x"></i></a> -->
 							<a href="https://www.linkedin.com/in/chrisyzhang" class="icons" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
 							<a href="mailto:chris.zhang@berkeley.edu" class="icons" target="_blank"><i class="fa fa-envelope-o fa-4x"></i></a>
+							<a href="https://github.com/zhang-chris" class="icons" target="_blank"><i class="fa fa-github fa-4x"></i></a>
 							<br><br><br><br>	
 						</div>
 		  			</div>

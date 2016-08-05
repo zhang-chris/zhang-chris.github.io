@@ -40,9 +40,8 @@ html, body {
 	text-shadow: none;
 }
 
-.navbar-left-addon {
+.navbar-left {
 	position: fixed;
-	background: green;
 	float: left;
 }
 
@@ -133,13 +132,12 @@ html, body {
 #logo {
 	width: 13%;
 	height: auto;
-	/*position: relative;*/
 	display: inline-block;
 	transition: all 0.65s ease;
 }
 
 #logo.transition1{
-	/*padding: 8px 8px 25px 5px;*/
+	padding: 8px 8px 25px 5px;
 	margin: auto;
 	width: 10%;
 	height: auto;
@@ -148,7 +146,7 @@ html, body {
 
 #cal-logo {
 	margin: auto;
-	width: 10%;
+	max-width: 10%;
 	height: auto;
 }
 
@@ -326,22 +324,36 @@ td a:hover{
 	color: #535f6b;
 }
 
+.proj-link:focus {
+	color: #535f6b;
+	text-decoration: none;
+}
+
 .proj-link:hover {
 	color: black;
 	text-decoration: none;
 }
 
-.proj-link:focus {
-	color: #535f6b;
-	text-decoration: none;
+#music-classifier {
+	width: 28%;
+	height: auto;
+	display: block;
+	margin-left: 30%;
+}
+
+#bnai-emunah{
+	width: 80%;
+	height: auto;
+	display: block;
+	margin-left: 17%;
 }
 
 #gitlet {
 	width: 61%;
 	height: auto;
 	display: block;
-	margin: auto;
-	padding: 2px;
+	margin-left: 15%;
+	margin-top: 15%;
 }
 
 #puzzle {
@@ -352,46 +364,40 @@ td a:hover{
 }
 
 #word-clock {
+	margin-left: 28%;
 	width: 50%;
 	height: auto;
 	display: block;
-	margin: auto;
 
+}
+
+.project-image {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	margin: auto;
+	background: blue;
 }
 	
 #blizzard-logo {
 	display: block;
-	margin: auto;
-	width: 75%;
+	max-width: 80%;
 	height: auto;
-	position: absolute;  
-/*    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0; 
-    margin: auto;*/
+    margin: auto;
 }
-/*
-.frame {
-	position: relative;
-	background: red;
-}*/
+
+#spring-logo {
+	display: block;
+	max-width: 75%;
+	height: auto;
+    margin: auto;
+}
 
 .experience-date {
 	text-align: center;
 	font-family: "Open Sans";
 	color: black;
 	font-size: 25px;
-}
-
-/*Make columns in a row all equal height*/
-.row {
-	overflow: hidden;
-}
-
-[class^="col-"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
 }
 
 .experience-text {
